@@ -16,4 +16,6 @@ def Calendar(year):
 
 	return pd.DataFrame(SeasonCalendar_Lists)
 
-print(Calendar(1950))
+def Calendars(year1, year2):
+	for year in range(1+year2-year1):
+		print(Calendar(year+year1))
