@@ -4,7 +4,7 @@ import pandas as pd
 
 def Calendar(year):
 
-	Season_HTML = requests.get(f"https://en.wikipedia.org/wiki/{year}_Formula_One_season")
+	Season_HTML = requests.get(f"https://en.wikipedia.org/wiki/F1_{year}")
 
 	Season_Soup = BeautifulSoup(Season_HTML.text, 'html.parser')
 
